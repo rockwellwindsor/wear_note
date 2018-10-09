@@ -1,12 +1,19 @@
 package com.example.android.windsordesignstudio.wear_note_1.model;
 
+import io.realm.RealmObject;
+
 /**
  * Created by Rockwell Windsor Rice on 10/2/18.
  */
-public class Note {
+public class Note extends RealmObject {
 
     private String notes = "";
     private String id    = "";
+
+    // Empty Constructor
+    public Note() {
+
+    }
 
     public Note(String id, String notes) {
         this.id    = id;
