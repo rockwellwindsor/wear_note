@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Wear Note 1</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+
+    <string name="add_a_note">Add a Note</string>
+    <string name="delete">Delete</string>
+    <string name="note_saved">Save</string>
+    <string name="note_removed">Note Removed</string>
+    <string name="cancel">Cancel</string>
+</resources>
