@@ -1,2 +1,2 @@
-# wear_note
+# Wear Note
 Android Wear note taking app
