@@ -8,14 +8,15 @@
         tools:context="com.example.android.windsordesignstudio.wear_note_1.activity.MainActivity"
         tools:deviceIds="wear"
         app:layout_box="all"
-        android:padding="5dp">
+        android:padding="5dp"
+        android:background="@color/colbalt_blue">
 
         <LinearLayout android:layout_width="match_parent"
                       android:layout_height="match_parent"
                       android:orientation="vertical"
                       android:layout_gravity="center">
 
-            <EditText
+            <com.example.android.windsordesignstudio.wear_note_1.utils.LoraWearEditTextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:id="@+id/edit_text"
@@ -23,13 +24,14 @@
                 android:inputType="textCapSentences|textAutoCorrect"
                 android:layout_gravity="center"
                 android:imeOptions="actionSend"
-                android:textColorHint="@color/orange"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
                 android:hint="@string/add_a_note"/>
 
             <android.support.wearable.view.WearableRecyclerView
                 android:id="@+id/wearable_recycler_view"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="wrap_content"/>
         </LinearLayout>
     </android.support.wearable.view.BoxInsetLayout>
 

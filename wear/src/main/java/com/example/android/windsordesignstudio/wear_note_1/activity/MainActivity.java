@@ -78,7 +78,7 @@ public class MainActivity extends WearableActivity implements RecyclerViewAdapte
         // Realm Read Query
         RealmResults<Note> results = realm.where(Note.class).findAll();
         myDataSet.clear();
-        myDataSet.addAll(SharedPreferencesUtils.getAllNotes(this));
+        myDataSet.addAll(results);
         mAdapter.setListNote(myDataSet);
         mAdapter.notifyDataSetChanged();
     }
@@ -143,5 +143,11 @@ public class MainActivity extends WearableActivity implements RecyclerViewAdapte
        realm.beginTransaction();
        results.deleteAllFromRealm();
        realm.commitTransaction();
+    }
+
+    @Override
+    protected void onDestroy() {
+        realm.close();
+        super.onDestroy();
     }
 }

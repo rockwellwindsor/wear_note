@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     android:id="@+id/container"
     tools:context=".activity.DeleteActivity"
-    tools:deviceIds="wear">
+    tools:deviceIds="wear"
+    android:background="@color/colbalt_blue">
 
     <LinearLayout android:layout_width="match_parent"
                   android:layout_height="match_parent"
@@ -20,14 +21,15 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/delete"/>
+            android:text="@string/delete"
+            android:textColor="@color/white"/>
 
         <android.support.wearable.view.DelayedConfirmationView
             android:id="@+id/delayed_confirmation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@android:drawable/ic_delete"
-            app:circle_border_color="@color/orange"
+            app:circle_border_color="@color/red"
             app:circle_color="@color/white"
             app:circle_border_width="8dp"
             app:circle_radius="30dp"/>

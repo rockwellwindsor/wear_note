@@ -10,12 +10,13 @@
     android:background="?android:attr/selectableItemBackground"
     android:orientation="vertical">
 
-    <TextView
+    <com.example.android.windsordesignstudio.wear_note_1.utils.LoraWearTextView
         android:id="@+id/note"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_gravity="center"
+        android:textColor="@color/white"
         tools:text="note"/>
     <View
         android:layout_width="match_parent"
